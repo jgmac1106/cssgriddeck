@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!-- 
+
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_________/////////___________/////////______/////////__________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////_____/////////__________________________
+________///////////_________///////////________________________________________
+________///////////_________///////////________________________________________
+________///////////////////////////////_____/////////__________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_____/////////___________
+________///////////_________///////////____///////////____///////////__________
+________///////////_________///////////____///////////____///////////__________
+________///////////_________///////////____///////////____///////////__________
+_________/////////___________/////////______/////////______/////////___________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+
+
+
+Copyright (c) 2017 James Clarke - www.hi.agency
+
+Version: 0.1.2
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+-->
+<html lang="en">
+<head>
+	<title>Deck CSS Grid template by Hi. Creative Agency</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Deck is a dynamic, CSS only website template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/ui.unsupported.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages.styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.webkit.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.edge.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.ie.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages.layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/page.gallery.css" />
+	<link rel="stylesheet" type="text/css" href="css/keyboard.css" />
+	
+</head>
+<body class="">
+
+	<input type="checkbox" id="menuChk" name="menuChk" aria-hidden="true" />
+	
+	<!--  desktop menu targets proxy-anchors -->
+	<div class="menu desktop" id="menu" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>
+		<ul>
+			<li><a href="#p1">Introduction</a></li>
+			<li><a href="#p2">About Deck</a></li>
+			<li><a href="#p3">Navigation</a></li>
+			<li><a href="#p4">CSS Grid</a></li>
+			<li><a href="#p5">Mobile</a></li>
+			<li><a href="#p6">Legacy browsers</a></li>
+			<li><a href="#p7">Example: Image</a></li>
+			<li><a href="#p8">Example: Quote</a></li>
+			<li><a href="#p9" class="gallery-link">Example: Gallery</a></li>
+			
+		</ul>
+	</div>
+	
+	<!--  mobile menu controls -->
+	<div class="menu-control-mobile" id="menu-control" aria-hidden="true">
+		<label for="menuChk" class="menuCtrlButton" aria-label="Toggle Menu Visibility">&#9776;</label>
+	</div>
+	
+	<!--  mobile menu targets layout ids as anchors -->
+	<div class="menu mobile" id="menuMobile" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>	
+		<nav role="navigation">
+			<ul>
+				<li><a href="#page1">Introduction</a></li>
+				<li><a href="#page2">About Deck</a></li>
+				<li><a href="#page3">Navigation</a></li>
+				<li><a href="#page4">CSS Grid</a></li>
+				<li><a href="#page5">Mobile</a></li>
+				<li><a href="#page6">Legacy browsers</a></li>
+				<li><a href="#page7">Example: Image</a></li>
+				<li><a href="#page8">Example: Quote</a></li>
+				<li><a href="#page9" class="gallery-link">Example: Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="wrapper">
+	<!-- Proxy anchors associate with layout ids in CSS. Transforms applied to scroll pages to view in desktop mode-->
+	    <div class="proxy-anchor" id="p1" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p2" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p3" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p4" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p5" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p6" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p7" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p8" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p9" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p10" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p11" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p12" aria-hidden="true"></div>
+	<!--/ Proxy anchors -->
+		
+		
+		<div class="grid">
+		
+			<div class="item" id="item1">
+				<a href="#p1" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image1" class="image">
+					<div class="image-container"><img src="img/cover1.png" alt="Cover Artwork"></div>
+				</div>
+				
+				<div id="page1" class="layout home">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>Introducing</h2>
+							<h1 class="huge">Deck</h1>
+							<p>A dynamic, CSS only website template</p>						
+						</div>
+						<div class="sidebar">
+							<a href="#p2" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item2">
+				<a href="#p2" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image2" class="image">
+					<div class="image-container"><img src="img/about.png" alt="Artwork"></div>
+				</div>
+				<div id="page2" class="layout">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>About Deck</h2>
+							<p>Deck is a CSS only SPA-style template designed for linear presentations like powerpoint, galleries, and marketing communications. </p>
+							<p>Deck uses no javascript to control the interface, but instead relies on CSS3 techniques and native browser functionality to provide navigation. Individual pages can be deep linked into, and the back/forward buttons remain functional as you browse the website.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p3" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item3">
+				<a href="#p3" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image3" class="image">
+					<div class="image-container"><img src="img/navigation.png" alt="Artwork"></div>
+				</div>
+				<div id="page3" class="layout">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>Navigation</h2>
+							<p>While Deck is well-suited for linear narratives, the user may also pull back and view the entire collection of pages  via the table of contents menu. Selecting any of the pages by clicking will focus that layout once the menu is closed, or you can double click to go straight into a specific page.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p4" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item4">
+				<a href="#p4" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image4" class="image left">
+					<div class="image-container"><img src="img/grid.png" alt="Artwork"></div>
+				</div>
+				<div id="page4" class="layout left">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>CSS Grid</h2>
+							<p>Deck uses the new CSS grid layout to provide control over horizontal and vertical placement of content within each page. This new control is particularly well suited to a format like Deck which has no 'below the fold' content.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item5">
+				<a href="#p5" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image5" class="image">
+					<div class="image-container"><img src="img/mobile.png" alt="Artwork"></div>
+				</div>
+				<div id="page5" class="layout">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>Mobile</h2>
+							<p>For mobile users, Deck is responsive and adapts itself to a mobile-friendly format. The table of contents allows for fast navigation to specific pages, and the back button remains usable.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p6" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>	
+			
+			
+			<div class="item" id="item6">
+				<a href="#p6" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image6" class="image">
+					<div class="image-container"><img src="img/legacy.png" alt="Artwork"></div>
+				</div>
+				<div id="page6" class="layout">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>Legacy Browsers</h2>
+						<p>Older browsers are supported as well, with Deck gracefully degrading to support previous CSS versions, while remaining accessible and usable.</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p7" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item7">
+				<a href="#p7" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image7" class="image splash">
+					<div class="image-container"><img src="img/image.png" alt="Artwork"></div>
+				</div>
+				<div id="page7" class="layout splash">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>An example of a full-page image, with caption text.</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p8" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item8">
+				<a href="#p8" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image8" class="image">
+					<div class="image-container"><img src="img/quote.png" alt="Artwork"></div>
+				</div>
+				<div id="page8" class="layout">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<blockquote>
+							Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+							<div class="author">—Antoine de Saint-Exupery</div>
+						</blockquote>
+					</div>
+					<div class="sidebar">
+						<a href="#p9" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item9">
+				<a href="#p9" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<input type="radio" class="gallery-radio" name="image" id="img1" checked>
+				<input type="radio" class="gallery-radio" name="image" id="img2">
+				<input type="radio" class="gallery-radio" name="image" id="img3">
+				<input type="radio" class="gallery-radio" name="image" id="img4">
+				<input type="radio" class="gallery-radio" name="image" id="img5">
+				<input type="radio" class="gallery-radio" name="image" id="img6">
+				<input type="radio" class="gallery-radio" name="image" id="img7">
+				<input type="radio" class="gallery-radio" name="image" id="img8">
+				
+				<div id="page9" class="layout gallery">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<div class="gallery-col2">
+							<div class="gallery-imageholder">
+								
+							</div>
+						</div>
+						<div class="gallery-col1">
+							<div class="gallery-nav">
+								<h2>Gallery</h2>
+								<label for="img1" class="gallery-thumb" id="img1thumb">Image1</label>
+								<label for="img2" class="gallery-thumb" id="img2thumb">Image2</label>
+								<label for="img3" class="gallery-thumb" id="img3thumb">Image3</label>
+								<label for="img4" class="gallery-thumb" id="img4thumb">Image4</label>
+								<label for="img5" class="gallery-thumb" id="img5thumb">Image5</label>
+								<label for="img6" class="gallery-thumb" id="img6thumb">Image6</label>
+								<label for="img7" class="gallery-thumb" id="img7thumb">Image7</label>
+								<label for="img8" class="gallery-thumb" id="img8thumb">Image8</label>
+							</div>
+						</div>
+						
+					</div>
+					<div class="sidebar">
+						<a href="#p1" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="footer">&copy; 2017 James Clarke - <a href="http://www.hi.agency/">hi.agency</a></div>			
+		</div>
+		
+		
+	</div>
+	<script>
+		//google analytics
+		/*
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-61449424-3', 'auto');
+		ga('send', 'pageview');
+		
+		<!-- Hotjar Tracking Code for http://www.hi.agency/deck -->
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:641452,hjsv:5};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');		
+		*/
+	</script>
+</body>
+</html>

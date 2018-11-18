@@ -1,0 +1,83 @@
+
+			
+/********************************************/			
+/* 		unsupported	browser style			*/	
+/********************************************/
+
+/*
+Copyright (c) 2017 James Clarke - www.hi.agency
+
+Version: 0.1.2
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+*/
+
+
+		body {
+					font-size: 16px;
+					margin: 0; 
+					background:#efefef; 
+					font-family: georgia, serif; 
+					scroll-behavior: smooth;
+			}
+			img {max-width: 100%;}
+			a.gallery-link {display: none !important;}
+			.layout.gallery { display: none;}
+			input.gallery-radio {display: none;}
+			h1.huge {font: normal 4em/.1em georgia, serif;}
+			
+			.text-white {color:white;}
+			
+			.color-red {background:red;}
+			.color-white {background:white;}
+			.color-blue {background:#0070ff;}
+			.color-black {background:black;}
+			
+			.proxy-anchor { display: none;}
+						
+			
+		/* off canvas menu stuff */	
+			.menu {
+				position: static;
+				background: #fff;
+				width: 100%;
+				z-index: 1000;
+				box-shadow: 0px 10px 40px 0 rgba(0,0,0,.2);
+			}
+			
+			.menu h3 {padding-left: 1em;}
+			.menu ul {list-style: none; padding: 0; margin: 1em;}
+			.menu ul li {margin: .25em; display: block; padding:0 1em;}
+			.menu ul li a {display: block; padding: .5em 0 .25em; border-bottom: 1px solid white; text-decoration: none; font-size: 1.25em; transition: border .5s linear; color: #222;}
+			.menu ul li a:hover { border-bottom: 1px solid #0070ff;}
+			.menu-control-mobile {display: none;}
+			
+			.menu.desktop {display: none;}
+			.item a.focus-page { display: none;}
+			.navbar {display: none;}
+			.sidebar {display: none;}
+			.menuCloseBtn {display: none;}
+			#menuChk {display: none;}
+			
+			.content { padding: 2em; }
+
+			
+	
